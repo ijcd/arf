@@ -43,4 +43,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'rb-fsevent' if `uname` =~ /Darwin/
+
+  # https://github.com/morshedalam/rename
+  gem 'rename'    # rails g rename:app_to New-Name
 end
