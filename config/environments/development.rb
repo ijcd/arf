@@ -34,4 +34,14 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  config.dev_tweaks.autoload_rules do
+    keep :all
+
+    skip '/favicon.ico'
+    skip :assets
+    keep :forced
+  end
+  config.dev_tweaks.log_autoload_notice = true
+
 end

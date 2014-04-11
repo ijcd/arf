@@ -45,5 +45,8 @@ group :development, :test do
   gem 'rb-fsevent' if `uname` =~ /Darwin/
 
   # https://github.com/morshedalam/rename
-  gem 'rename'    # rails g rename:app_to New-Name
+  gem 'rename'             # rails g rename:app_to New-Name
+
+  gem 'rails-dev-tweaks'   # don't reload assets all the time
+  gem 'quiet_assets'       # quiet noisy logs
 end
